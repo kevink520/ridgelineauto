@@ -24,6 +24,8 @@ export const metadata: Metadata = {
   title: "BC Advance Auto Repair · Santa Ana, CA",
   description:
     "Family-owned, ASE-certified auto repair in Santa Ana since 1985. Honest diagnostics for engines, brakes, tires and A/C on domestic and import cars. Free quotes over the phone.",
+  // Pre-launch: keep out of search results. Remove before going live.
+  robots: { index: false, follow: false },
   openGraph: {
     title: "BC Advance Auto Repair · Santa Ana, CA",
     description: "Whatever's making that noise, we'll help you understand it.",
