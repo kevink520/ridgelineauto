@@ -39,7 +39,7 @@ export function Services() {
           </div>
           <div data-reveal className="max-w-xs">
             <p className="text-[15px] leading-relaxed text-graphite/65">
-              Domestic or import, daily driver or work truck. If it rolls into Santa Ana, we&rsquo;ve likely
+              Domestic or import, daily driver or work truck. If it rolls into {business.city}, we&rsquo;ve likely
               fixed it before.
             </p>
             <a

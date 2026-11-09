@@ -13,7 +13,7 @@ export function Nav() {
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="mx-auto mt-3 flex max-w-[1400px] items-center justify-between gap-4 rounded-full border border-white/10 bg-ink/85 py-2 pr-2 pl-5 backdrop-blur-xl sm:mx-4 xl:mx-auto">
         <a href="#top" className="flex items-baseline gap-1.5 whitespace-nowrap" aria-label={business.name}>
-          <span className="text-[15px] font-semibold tracking-tight text-white">BC Advance</span>
+          <span className="text-[15px] font-semibold tracking-tight text-white">Ridgeline</span>
           <span className="font-serif text-lg italic text-amber">Auto</span>
         </a>
 

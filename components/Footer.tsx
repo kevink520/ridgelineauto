@@ -1,4 +1,6 @@
-import { business } from "@/lib/business";
+import { business, formatMinutes, hours } from "@/lib/business";
+
+const span = (d: number) => `${formatMinutes(hours[d].open!)} – ${formatMinutes(hours[d].close!)}`;
 
 export function Footer() {
   return (
@@ -23,7 +25,7 @@ export function Footer() {
         <div className="mt-20 grid gap-8 border-t border-white/[0.07] pt-8 text-sm text-mist sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="flex items-baseline gap-1.5">
-              <span className="font-semibold text-white">BC Advance</span>
+              <span className="font-semibold text-white">Ridgeline</span>
               <span className="font-serif text-lg text-amber italic">Auto</span>
             </p>
             <p className="mt-2">ASE-certified auto repair · Est. {business.established}</p>
@@ -34,9 +36,9 @@ export function Footer() {
             {business.city}, {business.region} {business.postalCode}
           </address>
           <p>
-            Mon–Fri 8:00 AM – 5:30 PM
+            Mon–Fri {span(1)}
             <br />
-            Sat 8:00 AM – 3:00 PM · Sun closed
+            Sat {span(6)} · Sun closed
           </p>
           <p className="lg:text-right">
             © {new Date().getFullYear()} {business.name}
@@ -44,6 +46,9 @@ export function Footer() {
             Domestic &amp; import specialists
           </p>
         </div>
+        <p className="mt-8 border-t border-white/[0.07] pt-6 text-xs text-mist/70">
+          Concept site for a fictional business. Design &amp; build by Kevin Kim.
+        </p>
       </div>
     </footer>
   );

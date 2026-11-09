@@ -20,7 +20,7 @@ const pillars = [
   },
   {
     title: "Free quotes by phone",
-    body: "Describe the symptom and we'll give you a straight answer on the phone before you ever drive over. Ask for Charlie or Tony.",
+    body: "Describe the symptom and we'll give you a straight answer on the phone before you ever drive over. Ask for Marco or Dee.",
     icon: (
       <path
         d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"
@@ -50,10 +50,10 @@ export function About() {
           <div data-reveal className="max-w-sm text-[15px] leading-relaxed text-mist">
             <p>
               {business.owners} opened the doors in {business.established} to help people repair cars at an
-              affordable price. Forty years on, and more than twenty on this same stretch of Harbor Blvd, that&rsquo;s
+              affordable price. Thirty years on, and more than twenty on this same stretch of Alder Way, that&rsquo;s
               still the whole business plan.
             </p>
-            <p className="eyebrow mt-6 text-white/45">Anthony &amp; Charlie L. · Owners</p>
+            <p className="eyebrow mt-6 text-white/45">Marco R. &amp; Dee O. · Owners</p>
           </div>
         </div>
       </div>

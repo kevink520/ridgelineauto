@@ -21,13 +21,13 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BC Advance Auto Repair · Santa Ana, CA",
+  title: "Ridgeline Auto Works · Cedar Hollow, CA",
   description:
-    "Family-owned, ASE-certified auto repair in Santa Ana since 1985. Honest diagnostics for engines, brakes, tires and A/C on domestic and import cars. Free quotes over the phone.",
+    "Family-owned, ASE-certified auto repair in Cedar Hollow since 1994. Honest diagnostics for engines, brakes, tires and A/C on domestic and import cars. Free quotes over the phone.",
   // Pre-launch: keep out of search results. Remove before going live.
   robots: { index: false, follow: false },
   openGraph: {
-    title: "BC Advance Auto Repair · Santa Ana, CA",
+    title: "Ridgeline Auto Works · Cedar Hollow, CA",
     description: "Whatever's making that noise, we'll help you understand it.",
     images: [{ url: "/og.jpg", width: 1200, height: 675 }],
   },

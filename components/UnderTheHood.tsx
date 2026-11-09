@@ -290,14 +290,14 @@ function ScrollHood() {
             <div ref={heroRef} className="absolute inset-x-0 top-12 lg:top-0 lg:flex lg:h-full lg:flex-col lg:justify-center">
               <p className="eyebrow mb-5 flex items-center gap-3 text-white/55 lg:mb-7">
                 <span className="h-px w-8 bg-amber" />
-                Santa Ana · Est. 1985 · ASE certified
+                {business.city} · Est. {business.established} · ASE certified
               </p>
               <h1 className="text-[2.15rem] leading-[1.02] font-medium tracking-[-0.035em] text-balance text-white sm:text-5xl lg:text-[clamp(2.5rem,min(4vw,6.6svh),4.6rem)]">
                 Whatever&rsquo;s making that noise, we&rsquo;ll help you{" "}
                 <em className="font-serif font-normal tracking-[-0.01em] text-amber">understand</em> it.
               </h1>
               <p className="mt-5 max-w-md text-[15px] leading-relaxed text-mist lg:mt-7 lg:text-base">
-                Family-owned for four decades. Honest diagnostics on every domestic and import car, with
+                Family-owned for three decades. Honest diagnostics on every domestic and import car, with
                 the problem explained in plain English before any wrench turns.
               </p>
               <div className="mt-7 flex flex-wrap items-center gap-3 lg:mt-9">
@@ -317,8 +317,8 @@ function ScrollHood() {
               </div>
               <dl className="mt-10 hidden grid-cols-3 border-t border-white/10 pt-6 sm:grid lg:mt-[min(3.5rem,5svh)]">
                 {[
-                  ["4.8", "★", "from 700+ reviews"],
-                  ["40", "+ yrs", "family-owned"],
+                  [String(business.rating), "★", "from 300+ reviews"],
+                  ["30", "+ yrs", "family-owned"],
                   ["100", "%", "satisfaction guaranteed"],
                 ].map(([n, unit, label]) => (
                   <div key={label} className="border-l border-white/10 pl-4 first:border-none first:pl-0">
@@ -368,7 +368,7 @@ function ScrollHood() {
               </h2>
               <p className="mt-5 max-w-md text-mist">
                 Tell us what you&rsquo;re hearing, feeling or smelling. We&rsquo;ll quote it free over the
-                phone. Ask for Charlie or Tony.
+                phone. Ask for Marco or Dee.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
@@ -505,7 +505,7 @@ function StaticHood() {
       <div className="mx-auto max-w-[1400px]">
         <p className="eyebrow mb-5 flex items-center gap-3 text-white/55">
           <span className="h-px w-8 bg-amber" />
-          Santa Ana · Est. 1985 · ASE certified
+          {business.city} · Est. {business.established} · ASE certified
         </p>
         <h1 className="max-w-4xl text-4xl leading-[1.02] font-medium tracking-[-0.035em] text-white lg:text-7xl">
           Whatever&rsquo;s making that noise, we&rsquo;ll help you{" "}

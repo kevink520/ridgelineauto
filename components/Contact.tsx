@@ -31,19 +31,11 @@ export function Contact() {
                 <br />
                 {business.city}, {business.region} {business.postalCode}
               </address>
-              <a
-                href={business.directionsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-3 inline-block text-sm text-white/70 underline decoration-amber underline-offset-[6px] transition-colors hover:text-white"
-              >
-                Get directions ↗
-              </a>
               <p className="eyebrow mt-8 mb-3 text-white/40">Call</p>
               <a href={business.phoneHref} className="text-2xl font-medium tracking-tight text-white hover:text-amber">
                 {business.phone}
               </a>
-              <p className="mt-2 text-sm text-mist">Ask for Charlie or Tony.</p>
+              <p className="mt-2 text-sm text-mist">Ask for Marco or Dee.</p>
             </div>
             <div>
               <div className="mb-3 flex items-center justify-between">

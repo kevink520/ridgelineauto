@@ -26,17 +26,9 @@ export function Reviews() {
           </p>
           <Stars className="mt-4 text-amber" />
           <p className="mt-4 max-w-xs text-[15px] leading-relaxed text-graphite/65">
-            Across {business.reviewCount}+ reviews from Santa Ana drivers who came back, and sent their
+            Across {business.reviewCount}+ reviews from {business.city} drivers who came back, and sent their
             neighbors.
           </p>
-          <a
-            href={business.reviewsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 inline-block text-sm underline decoration-amber decoration-1 underline-offset-[6px] transition-colors hover:text-ink"
-          >
-            Read all reviews on Google ↗
-          </a>
         </div>
 
         <ul className="divide-y divide-graphite/10">
@@ -52,7 +44,7 @@ export function Reviews() {
                   <span className="grid size-8 place-items-center rounded-full bg-graphite text-[10px] tracking-normal text-paper">
                     {r.name.charAt(0)}
                   </span>
-                  {r.name} · Google review
+                  {r.name} · Verified customer
                 </footer>
               </blockquote>
             </li>

@@ -1,32 +1,28 @@
 export const business = {
-  name: "BC Advance Auto Repair",
-  shortName: "BC Advance Auto",
-  established: 1985,
-  owners: "Charlie & Tony",
-  phone: "(714) 554-8290",
-  phoneHref: "tel:+17145548290",
-  street: "308 N Harbor Blvd, Ste B",
-  city: "Santa Ana",
+  name: "Ridgeline Auto Works",
+  shortName: "Ridgeline Auto",
+  established: 1994,
+  owners: "Marco & Dee",
+  phone: "(555) 014-2290",
+  phoneHref: "tel:+15550142290",
+  street: "1180 Alder Way, Unit 4",
+  city: "Cedar Hollow",
   region: "CA",
-  postalCode: "92703",
-  directionsUrl:
-    "https://www.google.com/maps/dir/?api=1&destination=308+N+Harbor+Blvd+B,+Santa+Ana,+CA+92703",
-  reviewsUrl:
-    "https://www.google.com/search?q=BC+Advance+Auto+Santa+Ana+reviews",
-  rating: 4.8,
-  reviewCount: 707,
+  postalCode: "90000",
+  rating: 4.9,
+  reviewCount: 340,
   timeZone: "America/Los_Angeles",
 } as const;
 
 // Day index follows Date#getDay(): 0 = Sunday. Times are minutes after midnight.
 export const hours: { day: string; short: string; open: number | null; close: number | null }[] = [
   { day: "Sunday", short: "Sun", open: null, close: null },
-  { day: "Monday", short: "Mon", open: 8 * 60, close: 17 * 60 + 30 },
-  { day: "Tuesday", short: "Tue", open: 8 * 60, close: 17 * 60 + 30 },
-  { day: "Wednesday", short: "Wed", open: 8 * 60, close: 17 * 60 + 30 },
-  { day: "Thursday", short: "Thu", open: 8 * 60, close: 17 * 60 + 30 },
-  { day: "Friday", short: "Fri", open: 8 * 60, close: 17 * 60 + 30 },
-  { day: "Saturday", short: "Sat", open: 8 * 60, close: 15 * 60 },
+  { day: "Monday", short: "Mon", open: 7 * 60 + 30, close: 18 * 60 },
+  { day: "Tuesday", short: "Tue", open: 7 * 60 + 30, close: 18 * 60 },
+  { day: "Wednesday", short: "Wed", open: 7 * 60 + 30, close: 18 * 60 },
+  { day: "Thursday", short: "Thu", open: 7 * 60 + 30, close: 18 * 60 },
+  { day: "Friday", short: "Fri", open: 7 * 60 + 30, close: 18 * 60 },
+  { day: "Saturday", short: "Sat", open: 9 * 60, close: 14 * 60 },
 ];
 
 export function formatMinutes(m: number) {
@@ -109,15 +105,15 @@ export const serviceGroups = [
 
 export const reviews = [
   {
-    quote: "Whether I get just an oil change or any other service they give a fair price.",
-    name: "Elmer B.",
+    quote: "They showed me the worn part, explained it, and charged exactly what they quoted.",
+    name: "Priya S.",
   },
   {
-    quote: "They work quickly, they’re nice, and they’re super fair with their prices.",
-    name: "Richard L.",
+    quote: "Two other shops wanted to replace everything. Marco fixed one sensor and I was on my way.",
+    name: "Dan M.",
   },
   {
-    quote: "No pushy people to get you spend more money than what need to be done.",
-    name: "Truong D.",
+    quote: "Honest, quick, and they actually call you back. My whole family brings their cars here now.",
+    name: "Luis R.",
   },
 ] as const;
